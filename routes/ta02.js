@@ -3,6 +3,13 @@
 const express = require('express');
 const router = express.Router();
 
+const userNames = [];
+
+router.post('/ta02/addUser', (req, res, next) => {
+  
+
+});
+
 router.get('/', (req, res, next) => {
   res.render('pages', {
     title: 'Team Activity 02',
@@ -11,5 +18,8 @@ router.get('/', (req, res, next) => {
     contentCSS: true, // For HBS
   });
 });
+
+router.listen(3000);
+console.log('Listening on 3000');
 
 module.exports = router;
