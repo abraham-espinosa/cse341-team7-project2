@@ -3,11 +3,14 @@
 const express = require('express');
 const router = express.Router();
 
-const userNames = [];
+const userArray = ['jack', 'jill','brian'];
 
-router.post('/ta02/addUser', (req, res, next) => {
-  
+router.post('addUser', (req, res, next) => {
+  const newUser = req.body.newUser;
 
+  userArray.push(newUser);
+
+  res.redirect('/ta02/');
 });
 
 router.get('/', (req, res, next) => {
