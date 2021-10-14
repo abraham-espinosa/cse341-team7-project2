@@ -1,7 +1,8 @@
 const links = [
-  { label: "Alcala-project341",  url: "https://alcala-project341.herokuapp.com/"  },
-  { label: "CSE341-nodeproject",  url: "https://cse341-nodeproject.herokuapp.com/"  },
-  { label: "project341",  url: "https://project341.herokuapp.com/"  }
+  { label: "Team 7 Index",  url: "/index.js/"  },
+  { label: "Alcala Project 341",  url: "https://alcala-project341.herokuapp.com/"  },
+  { label: "CSE341 nodeproject",  url: "https://cse341-nodeproject.herokuapp.com/"  },
+  { label: "Project 341",  url: "https://project341.herokuapp.com/"  }
 ]; 
 
 
