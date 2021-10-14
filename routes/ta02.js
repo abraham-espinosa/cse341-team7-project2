@@ -22,7 +22,7 @@ router.get('/', (req, res, next) => {
   });
 });
 
-router.listen(3000);
-console.log('Listening on 3000');
+//router.listen(3000);
+//console.log('Listening on 3000');
 
 module.exports = router;
