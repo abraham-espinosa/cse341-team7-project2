@@ -29,13 +29,13 @@ exports.resetSession = (req, res, next) => {
 };
 
 exports.getIndex = (req, res, next) => {
-  // It's a good idea to initialize session variables to some sort of default value
-  if (req.session.counter === undefined) {
-    req.session.counter = 0;
-  }
-  if (!req.session.style === undefined) {
-    req.session.counter = 0;
-  }
+  //It's a good idea to initialize session variables to some sort of default value
+ if (req.session.counter === undefined) {
+   req.session.counter = 0;
+ }
+ if (!req.session.style === undefined) {
+   req.session.counter = 0;
+ }
   res.render('pages/ta05', {
     title: 'Team Activity 05',
     path: '/ta05',
