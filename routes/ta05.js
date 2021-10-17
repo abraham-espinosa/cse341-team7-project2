@@ -1,7 +1,28 @@
+//TA05 PLACEHOLDER
+const express = require('express');
+const router = express.Router();
+
+router.get('/', (req, res, next) => {
+  res.render('pages/ta05', {
+    title: 'Team Activity 05',
+    path: '/ta05', // For pug, EJS
+    activeTA04: true, // For HBS
+    contentCSS: true, // For HBS
+  });
+});
+
+module.exports = router;
+
+
+
+
+
+
 /**********************************
  * Team Activity 05 route handling
  **********************************/
- const express = require('express');
+/*
+const express = require('express');
  const router = express.Router();
  
  const ta05Controller = require('../controllers/ta05');
@@ -19,3 +40,4 @@
  router.get('/', ta05Controller.getIndex);
  
  module.exports = router;
+*/
