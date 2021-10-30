@@ -1,0 +1,38 @@
+{
+  "name": "eq-service-finder",
+  "version": "1.0.0",
+  "description": "Group 7 Project 2 for CSE 341",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Etrix06/cse341-team7-project2.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Erik Alcala, Abraham Espinosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Etrix06/cse341-team7-project2/issues"
+  },
+  "homepage": "https://github.com/Etrix06/cse341-team7-project2#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^3.1.1",
+    "csurf": "^1.11.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.13.0",
+    "mongoose": "^6.0.12",
+    "nodemailer": "^6.7.0",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "nodemon": "^2.0.14"
+  }
+}
