@@ -1,0 +1,27 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+
+<body>
+    <%- include('includes/navigation.ejs') %>
+    <header class="second-header main-header" >
+        <nav class="second-header__nav main-header__nav">
+            <ul class="second-header__item-list main-header__item-list">
+                <li class="second-header__item main-header__item"><a style="display: none;" href="/admin/serve">Request Service Post</a></li>
+                <li class="second-header__item main-header__item"><a class="active" href="/admin/talents">Share Talents Post</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form class="product-form" action="/admin/add-talent" method="POST">
+            <div class="form-control">
+                <label for="title">Talents to Share</label>
+                <input type="text" name="talent" id="talent">
+            </div>
+
+            <button class="btn" type="submit">Share Talent</button>
+        </form>
+    </main>
+<%- include('includes/end.ejs') %>

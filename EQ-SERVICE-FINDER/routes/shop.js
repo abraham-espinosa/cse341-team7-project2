@@ -1,13 +1,20 @@
 const path = require('path');
 
 const express = require('express');
+const app = express();
 
-const rootDir = require('../util/path');
 
 const router = express.Router();
 
 router.get('/', (req, res, next) => {
-  res.sendFile(path.join(rootDir, 'views', 'home.html'));
+  res.render('home', {
+    pageTitle: 'EQ Service Finder Home',
+    path: '/'
+  });
+});
+
+app.use((req, res, next) => {
+  res.status(404).render('404', { pageTitle: 'Page Not Found'});
 });
 
 module.exports = router;
