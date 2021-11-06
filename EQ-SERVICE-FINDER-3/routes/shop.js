@@ -9,11 +9,10 @@ const router = express.Router();
 
 router.get('/', shopController.getIndex);
 
-//router.get('/products', shopController.getProducts);
-router.get('/products', shopController.getServices);
+router.get('/services', shopController.getServices);
 
 //getTalents
-router.get('/products', shopController.getTalents);
+router.get('/talents', shopController.getTalents);
 
 router.get('/products/:productId', shopController.getProduct);
 

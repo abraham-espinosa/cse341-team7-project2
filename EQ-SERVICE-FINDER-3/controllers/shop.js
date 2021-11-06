@@ -1,17 +1,13 @@
 const Product = require('../models/product');
 const Order = require('../models/order');
 
-// exports.getProducts = (req, res, next) => {
 exports.getServices = (req, res, next) => {
   Product.find()
     .then(products => {
       console.log(products);
-      // res.render('shop/product-list', {
       res.render('shop/service-list', {
         prods: products,
-        // pageTitle: 'All Products',
         pageTitle: 'All Services',
-        // path: '/products',
         path: '/services'
       });
     })
@@ -22,7 +18,6 @@ exports.getServices = (req, res, next) => {
     });
 };
 
-//getTalents
 exports.getTalents = (req, res, next) => {
   Product.find()
     .then(products => {
